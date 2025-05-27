@@ -63,14 +63,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.querySelector('.contact-form form');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
+  contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
+
+    // Here you would typically send the form data to a server using fetch or AJAX
     
-    // Here you would typically send the form data to a server
-    alert('Thank you for your message! We will get back to you soon.');
+    // Display a more professional confirmation message
+    alert('Your message has been successfully submitted. Our team will review it and get back to you shortly. Thank you for reaching out to us.');
+
+    // Reset the form after submission
     this.reset();
   });
 }
+
 
 // Animation on scroll
 const animateOnScroll = () => {
