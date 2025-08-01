@@ -11,25 +11,27 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-  <a href="#services" class="logo-link">
-    <strong>Lexi Translation Lab</strong>
-  </a>
-  <span class="tagline">Yours Translation Partner</span>
-</div>
+  <div class="logo">
+    <a href="#home" class="logo-link">
+      <!-- If you want the image: -->
+      <!-- <img src="logo.png" alt="Lexi Translation Lab" style="height:32px;width:32px;margin-right:8px;"> -->
+      <strong>Lexi Translation Lab</strong>
+    </a>
+    <span class="tagline">Your Translation Partner</span>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#testimonials">Clients</a>
+    <a href="#contact">Contacts</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <button class="mobile-menu-btn" aria-label="Toggle menu">
+    <i class="fas fa-bars"></i>
+  </button>
+</header>
 
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#testimonials">Clients</a>
-      <a href="#contact">Contacts</a>
-    </nav>
-    <button class="mobile-menu-btn" aria-label="Toggle menu">
-      <i class="fas fa-bars"></i>
-    </button>
-  </header>
-
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
       <h1>Professional Legal Translation Services</h1>
       <p class="subtitle">Accurate, certified, and confidential translations for all your legal documents. Trusted by law firms and corporations worldwide.</p>
@@ -245,62 +247,56 @@
   </section>
 
   <section class="section" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>Have a document or content that needs translation? Contact our expert team for accurate and professional Hindi to English translation services.</p>
-        <div class="contact-method">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h3>Email Us</h3>
-            <a href="mailto:contact@lexitranslationlab.site">info@lexitranslationlab.site</a>
-          </div>
-        </div>
-        <div class="contact-method">
-          <i class="fas fa-phone-alt"></i>
-          <div>
-            <h3>Call Us</h3>
-            <a href="tel:+911234567890">+91 83686 99442</a>
-          </div>
-        </div>
-        <div class="contact-method">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h3>Visit Us</h3>
-            <address>J3/170, Kishan Kunj, Laxmi Nagar, New Delhi - 110092</address>
-          </div>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Have a document or content that needs translation? Contact our expert team for accurate Hindi to English translation services.</p>
+      <div class="contact-method">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h3>Email Us</h3>
+          <a href="mailto:contact@lexitranslationlab.site">info@lexitranslationlab.site</a>
         </div>
       </div>
-      <div class="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-          </div>
-          <div class="form-group">
-            <label for="service">Service Needed</label>
-            <select id="service">
-              <option value="">Select a service</option>
-              <option value="document">Document Translation</option>
-              <option value="certified">Certified Translation</option>
-              <option value="localization">Localization</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">📨 Send Message</button>
-
-        </form>
+      <div class="contact-method">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h3>Call Us</h3>
+          <a href="tel:+911234567890">+91 83686 99442</a>
+        </div>
+      </div>
+      <div class="contact-method">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Visit Us</h3>
+          <address>J3/170, Kishan Kunj, Laxmi Nagar, New Delhi - 110092</address>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="contact-form">
+      <!-- Hidden iframe to submit form silently -->
+<!-- Hidden iframe for background Google Form submission -->
+<!-- Hidden iframe for background submission -->
+<section class="section" id="feedback">
+  <h2>Feedback on Our Work</h2>
+  <p>
+    Can you please give feedback on our service? Your feedback helps us improve our work and serve you better.
+  </p>
+  <a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSe4ogrSgUEIqqc_XBVIDKsBQPpStPaNqst08gZ-lSmdrYsrlA/viewform"
+    target="_blank" 
+    rel="noopener"
+    class="btn-primary"
+    style="display:inline-block;margin:18px 0;padding:12px 30px;font-size:1.1rem;">
+    Click on button to give feedback
+  </a>
+</section>
+
+
+
+    </div>
+  </div>
+</section>
 
   <footer>
     <div class="footer-content">
@@ -350,5 +346,6 @@
   </footer>
 
   <script src="script.js"></script>
+  
 </body>
 </html>
