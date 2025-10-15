@@ -107,146 +107,208 @@
       <div class="about-image"><img src="Who.jpg" alt="Lexi Translation Lab - Certified Legal Document Translations">
       </div>
     </div>
-  <section class="section" id="testimonials">
-  <div class="section-header">
-    <span class="section-subtitle">Client Experiences</span>
-    <h2>Trusted by Leading Legal Professionals</h2>
-  </div>
-  <div class="testimonials-grid">
-    <!-- Existing Testimonials -->
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"As a practicing advocate, I often need certified translations for legal documents. Lexi Translation Lab is my go-to—accurate, fast, and priced better than anyone else in the market."</p>
-      <div class="client-info">
-        <div>
-          <h4>Adv. Rahul Sharma</h4>
-          <span>Senior Advocate, Supreme Court</span>
-        </div>
-      </div>
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    /* Testimonials Grid */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Responsive Grid */
+    @media (min-width: 600px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Testimonial Card */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .rating {
+      color: #fbbc04;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .client-info {
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+    }
+
+    .client-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .client-position {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="section testimonials" id="testimonials">
+    <div class="section-header">
+      <span class="section-subtitle">Client Experiences</span>
+      <h2 class="section-title">Trusted by Leading Legal Professionals</h2>
     </div>
 
-    <!-- New Testimonials -->
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Exceptional work! Needed multiple property documents translated, and they handled everything efficiently. The pricing is fair, and the quality is unmatched. Strongly recommended!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Vikram Joshi</h4>
-          <span>Delhi</span>
+    <div class="testimonials-grid">
+      
+      <!-- Repeatable Testimonial Cards -->
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Perfect translations every single time! Their team understands legal jargon better than most. Submitted my documents in the morning and got them back by evening—brilliant service!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Vineet Malhotra</h4>
-          <span>Delhi</span>
+        <p class="testimonial-text">"As a practicing advocate, I often need certified translations for legal documents. Lexi Translation Lab is my go-to—accurate, fast, and priced better than anyone else in the market."</p>
+        <div class="client-info">
+          <h4 class="client-name">Adv. Rahul Sharma</h4>
+          <span class="client-position">Senior Advocate, Supreme Court</span>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Best document translation service I’ve used! My court submissions were translated with absolute perfection, and the turnaround time was unbelievable. A must-try for legal professionals!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Arun Goel</h4>
-          <span>Mumbai</span>
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Flawless execution! I needed a complex legal agreement translated, and they did it with zero errors. The fastest and most accurate service I’ve come across. Kudos!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Rajeev Nair</h4>
-          <span>Madhya Pradesh</span>
+        <p class="testimonial-text">"Exceptional work! Needed multiple property documents translated, and they handled everything efficiently. The pricing is fair, and the quality is unmatched. Strongly recommended!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Vikram Joshi</h4>
+          <span class="client-position">Delhi</span>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Absolutely brilliant! My firm regularly uses this service for legal document translations, and they never fail to impress. Quick, precise, and dependable. A must for lawyers!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Meera Desai</h4>
-          <span>Delhi</span>
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Perfect in every way! Needed translations for a high-stakes case, and they delivered beyond expectations. Quick response, flawless work. Highly recommended!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Ankur Aggarwal</h4>
-          <span>Madhya Pradesh</span>
+        <p class="testimonial-text">"Perfect translations every single time! Their team understands legal jargon better than most. Submitted my documents in the morning and got them back by evening—brilliant service!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Vineet Malhotra</h4>
+          <span class="client-position">Delhi</span>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Reliable and precise! As a lawyer, I can’t compromise on translation accuracy, and this service delivers perfection every time. Fast and affordable—highly recommended!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Nidhi Jain</h4>
-          <span>Delhi</span>
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Simply the best! Their translations are so accurate that I’ve stopped looking elsewhere. Quick, professional, and error-free. A must for legal practitioners!"</p>
-      <div class="client-info">
-        <div>
-          <h4>Ankit Agarwal</h4>
-          <span>Gurgaon</span>
+        <p class="testimonial-text">"Best document translation service I’ve used! My court submissions were translated with absolute perfection, and the turnaround time was unbelievable. A must-try for legal professionals!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Arun Goel</h4>
+          <span class="client-position">Mumbai</span>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="testimonial-card">
-      <div class="rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p>"Honestly, I was skeptical at first. But they won me over with their clear communication, lightning-fast delivery, and impeccable translation. I don’t trust services easily, but this one I do."</p>
-      <div class="client-info">
-        <div>
-          <h4>Farhan Qureshi</h4>
-          <span>Lucknow</span>
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <p class="testimonial-text">"Flawless execution! I needed a complex legal agreement translated, and they did it with zero errors. The fastest and most accurate service I’ve come across. Kudos!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Rajeev Nair</h4>
+          <span class="client-position">Madhya Pradesh</span>
+        </div>
+      </article>
 
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Absolutely brilliant! My firm regularly uses this service for legal document translations, and they never fail to impress. Quick, precise, and dependable. A must for lawyers!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Meera Desai</h4>
+          <span class="client-position">Delhi</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Perfect in every way! Needed translations for a high-stakes case, and they delivered beyond expectations. Quick response, flawless work. Highly recommended!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Ankur Aggarwal</h4>
+          <span class="client-position">Madhya Pradesh</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Reliable and precise! As a lawyer, I can’t compromise on translation accuracy, and this service delivers perfection every time. Fast and affordable—highly recommended!"</p>
+        <div class="client-info">
+          <h4 class="client-name">Nidhi Jain</h4>
+          <span class="client-position">Delhi</span>
+        </div>
 
   <section class="section accent-bg" id="faq">
     <div class="section-header">
